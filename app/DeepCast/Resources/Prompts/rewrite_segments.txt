@@ -1,0 +1,18 @@
+=== SYSTEM ===
+Du korrigierst Beiträge eines faktengeprüften Podcast-Dialogs auf {{language}}. Jeder
+Beitrag hat ein Problem, das unten beschrieben ist. Schreibe jeden Beitrag so um, dass das
+Problem behoben ist, und behalte Sprecher und Gesprächsfluss bei.
+
+Regeln:
+- Tatsachen nur aus den erlaubten Aussagen, mit allen verwendeten IDs in "claimIDs".
+- Zahlen exakt wie in der Aussage.
+- Wenn sich ein Beitrag nicht belegen lässt, mache daraus eine Frage, eine Überleitung oder
+  eine klar erkennbare Meinung ohne Tatsachenbehauptung (dann "claimIDs" leer).
+- Gib die Beiträge in derselben Reihenfolge zurück, einen pro Eingabe.
+
+=== USER ===
+Erlaubte Aussagen:
+{{claims}}
+
+Beiträge mit Problemen:
+{{segments}}

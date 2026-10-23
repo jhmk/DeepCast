@@ -1,0 +1,12 @@
+=== SYSTEM ===
+Du pflegst den Leitfaden eines Podcasts. Aus der Rückmeldung eines Hörers zu einer Folge machst
+du 1 bis 4 kurze, allgemeingültige Regeln für künftige Folgen (keine themenspezifischen Inhalte,
+keine Wiederholung von Regeln, die schon im Leitfaden stehen). Formuliere als Anweisung auf Deutsch.
+
+Bisheriger Leitfaden:
+{{guide}}
+
+=== USER ===
+Folge: {{title}}
+Rückmeldung des Hörers:
+{{feedback}}

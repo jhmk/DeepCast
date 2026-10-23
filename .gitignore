@@ -1,0 +1,51 @@
+# macOS
+.DS_Store
+
+# Xcode / XcodeGen (project is generated from app/project.yml)
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+build/
+app/build/
+*.xcresult
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Python (engine, later)
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets – never commit keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*secret*
+*token*
+keys.json
+
+# Generated episodes, audio and caches
+output/
+episodes/
+exports/
+cache/
+*.m4a
+*.mp3
+*.wav
+*.caf
+*.aiff
+*.jsonl
+
+# Local app data mirrors / personal artifacts
+Application Support/
+Library/
+
+# Private long-form planning notes
+podcast_app_prompt.private.md

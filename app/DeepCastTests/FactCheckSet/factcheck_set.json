@@ -1,0 +1,426 @@
+{
+ "version": 1,
+ "description": "Spec 5.8: 30 Mythen/Falschbehauptungen und 30 korrekte Aussagen (DE/EN) mit Belegstelle für den Verifier. Kennzahlen: Anteil erkannter Mythen (contradicted/not_enough_info) und Anteil fälschlich verworfener korrekter Aussagen.",
+ "items": [
+  {
+   "id": "M01",
+   "expected": "false",
+   "de": "Wir nutzen nur 10 Prozent unseres Gehirns.",
+   "en": "We only use 10 percent of our brains.",
+   "evidence": "Bildgebende Verfahren zeigen, dass praktisch alle Hirnregionen aktiv sind; es gibt keinen ungenutzten Großteil des Gehirns."
+  },
+  {
+   "id": "M02",
+   "expected": "false",
+   "de": "Die Chinesische Mauer ist vom Mond aus mit bloßem Auge sichtbar.",
+   "en": "The Great Wall of China is visible from the Moon with the naked eye.",
+   "evidence": "Die Mauer ist nur wenige Meter breit und vom Mond aus mit bloßem Auge nicht zu erkennen; selbst aus der Erdumlaufbahn ist sie kaum sichtbar."
+  },
+  {
+   "id": "M03",
+   "expected": "false",
+   "de": "Goldfische haben ein Gedächtnis von nur drei Sekunden.",
+   "en": "Goldfish have a memory span of only three seconds.",
+   "evidence": "Versuche zeigen, dass Goldfische gelernte Aufgaben über Monate behalten."
+  },
+  {
+   "id": "M04",
+   "expected": "false",
+   "de": "Blitze schlagen nie zweimal an derselben Stelle ein.",
+   "en": "Lightning never strikes the same place twice.",
+   "evidence": "Hohe Gebäude wie das Empire State Building werden jedes Jahr mehrfach vom Blitz getroffen."
+  },
+  {
+   "id": "M05",
+   "expected": "false",
+   "de": "Fledermäuse sind blind.",
+   "en": "Bats are blind.",
+   "evidence": "Alle Fledermausarten können sehen; viele nutzen zusätzlich Echoortung."
+  },
+  {
+   "id": "M06",
+   "expected": "false",
+   "de": "Stiere werden durch die Farbe Rot wütend.",
+   "en": "Bulls are enraged by the colour red.",
+   "evidence": "Rinder sind rot-grün-farbenblind; der Stier reagiert auf die Bewegung des Tuchs, nicht auf die Farbe."
+  },
+  {
+   "id": "M07",
+   "expected": "false",
+   "de": "Die Zunge hat feste Zonen für süß, sauer, salzig und bitter.",
+   "en": "The tongue has separate zones for sweet, sour, salty and bitter.",
+   "evidence": "Geschmacksrezeptoren für alle Grundgeschmacksrichtungen sind über die gesamte Zunge verteilt."
+  },
+  {
+   "id": "M08",
+   "expected": "false",
+   "de": "Zucker macht Kinder hyperaktiv.",
+   "en": "Sugar makes children hyperactive.",
+   "evidence": "Doppelblinde Studien fanden keinen Unterschied im Verhalten von Kindern nach Zucker oder Placebo."
+  },
+  {
+   "id": "M09",
+   "expected": "false",
+   "de": "Menschen haben nur fünf Sinne.",
+   "en": "Humans have only five senses.",
+   "evidence": "Neben Sehen, Hören, Riechen, Schmecken und Tasten haben Menschen weitere Sinne wie Gleichgewichtssinn, Temperatursinn und Schmerzempfinden."
+  },
+  {
+   "id": "M10",
+   "expected": "false",
+   "de": "Napoleon war außergewöhnlich klein.",
+   "en": "Napoleon was exceptionally short.",
+   "evidence": "Napoleon war etwa 1,69 Meter groß und damit für seine Zeit durchschnittlich."
+  },
+  {
+   "id": "M11",
+   "expected": "false",
+   "de": "Wikinger trugen Helme mit Hörnern.",
+   "en": "Vikings wore horned helmets.",
+   "evidence": "Es gibt keine archäologischen Funde von Wikingerhelmen mit Hörnern; das Bild stammt aus Kostümen des 19. Jahrhunderts."
+  },
+  {
+   "id": "M12",
+   "expected": "false",
+   "de": "Strauße stecken bei Gefahr den Kopf in den Sand.",
+   "en": "Ostriches bury their heads in the sand when in danger.",
+   "evidence": "Strauße stecken ihren Kopf nicht in den Sand; sie legen sich bei Gefahr flach auf den Boden oder laufen weg."
+  },
+  {
+   "id": "M13",
+   "expected": "false",
+   "de": "Der Mount Everest ist der höchste Berg vom Fuß bis zum Gipfel.",
+   "en": "Mount Everest is the tallest mountain from base to peak.",
+   "evidence": "Vom Fuß bis zum Gipfel gemessen ist der Mauna Kea mit etwa 10.200 Metern höher als der Mount Everest."
+  },
+  {
+   "id": "M14",
+   "expected": "false",
+   "de": "Haare und Nägel wachsen nach dem Tod weiter.",
+   "en": "Hair and nails keep growing after death.",
+   "evidence": "Nach dem Tod zieht sich die Haut durch Austrocknung zurück, wodurch Haare und Nägel länger wirken; sie wachsen nicht weiter."
+  },
+  {
+   "id": "M15",
+   "expected": "false",
+   "de": "Rasieren lässt Haare dicker nachwachsen.",
+   "en": "Shaving makes hair grow back thicker.",
+   "evidence": "Studien zeigen, dass Rasieren weder Dicke noch Farbe noch Wachstumsgeschwindigkeit der Haare verändert."
+  },
+  {
+   "id": "M16",
+   "expected": "false",
+   "de": "Im Mittelalter glaubten die Gelehrten, die Erde sei eine Scheibe.",
+   "en": "Medieval scholars believed the Earth was flat.",
+   "evidence": "Gelehrte des Mittelalters gingen allgemein von einer Kugelgestalt der Erde aus, wie sie schon in der Antike beschrieben wurde."
+  },
+  {
+   "id": "M17",
+   "expected": "false",
+   "de": "Einstein fiel in Mathematik durch.",
+   "en": "Einstein failed mathematics.",
+   "evidence": "Einstein hatte in Mathematik stets sehr gute Noten und beherrschte Differential- und Integralrechnung schon als Jugendlicher."
+  },
+  {
+   "id": "M18",
+   "expected": "false",
+   "de": "Kaugummi bleibt sieben Jahre im Magen.",
+   "en": "Swallowed chewing gum stays in the stomach for seven years.",
+   "evidence": "Verschluckter Kaugummi wird nicht verdaut, verlässt den Körper aber wie andere unverdauliche Stoffe innerhalb weniger Tage."
+  },
+  {
+   "id": "M19",
+   "expected": "false",
+   "de": "Fingerknacken verursacht Arthrose.",
+   "en": "Cracking your knuckles causes arthritis.",
+   "evidence": "Studien fanden keinen Zusammenhang zwischen Fingerknacken und Arthrose in den Händen."
+  },
+  {
+   "id": "M20",
+   "expected": "false",
+   "de": "Wasser leitet Wärme beim Kochen schneller, wenn man Salz hinzufügt, sodass Nudeln deutlich schneller gar werden.",
+   "en": "Adding salt to water makes pasta cook much faster.",
+   "evidence": "Die übliche Menge Salz erhöht den Siedepunkt von Wasser nur um Bruchteile eines Grades und hat praktisch keinen Einfluss auf die Garzeit."
+  },
+  {
+   "id": "M21",
+   "expected": "false",
+   "de": "Chamäleons wechseln ihre Farbe, um sich an den Hintergrund anzupassen.",
+   "en": "Chameleons change colour to match their background.",
+   "evidence": "Chamäleons ändern ihre Farbe vor allem zur Kommunikation und Temperaturregulierung, nicht zur Tarnung am Hintergrund."
+  },
+  {
+   "id": "M22",
+   "expected": "false",
+   "de": "Diamanten entstehen aus gepresster Kohle.",
+   "en": "Diamonds are formed from compressed coal.",
+   "evidence": "Die meisten Diamanten entstehen im Erdmantel in über 150 Kilometern Tiefe, weit unter den Kohlelagerstätten, aus Kohlenstoff, nicht aus Kohle."
+  },
+  {
+   "id": "M23",
+   "expected": "false",
+   "de": "Ein Penny, der vom Empire State Building fällt, kann einen Menschen töten.",
+   "en": "A penny dropped from the Empire State Building can kill a person.",
+   "evidence": "Eine fallende Münze erreicht wegen des Luftwiderstands nur etwa 40 bis 80 km/h und kann einen Menschen nicht töten."
+  },
+  {
+   "id": "M24",
+   "expected": "false",
+   "de": "Die Große Pyramide wurde von Sklaven gebaut.",
+   "en": "The Great Pyramid was built by slaves.",
+   "evidence": "Funde von Arbeiterdörfern und Gräbern zeigen, dass die Pyramiden von bezahlten Arbeitern gebaut wurden."
+  },
+  {
+   "id": "M25",
+   "expected": "false",
+   "de": "Mücken werden von Licht angezogen, weil sie Blut riechen.",
+   "en": "Mosquitoes are attracted to light because they smell blood.",
+   "evidence": "Stechmücken finden Menschen vor allem über ausgeatmetes Kohlendioxid, Körperwärme und Geruchsstoffe der Haut."
+  },
+  {
+   "id": "M26",
+   "expected": "false",
+   "de": "Impfungen verursachen Autismus.",
+   "en": "Vaccines cause autism.",
+   "evidence": "Große Studien mit Millionen Kindern fanden keinen Zusammenhang zwischen Impfungen und Autismus; die Studie von Wakefield wurde zurückgezogen."
+  },
+  {
+   "id": "M27",
+   "expected": "false",
+   "de": "Der Darm ist für 90 Prozent aller Entscheidungen des Menschen verantwortlich.",
+   "en": "The gut makes 90 percent of human decisions.",
+   "evidence": "Der Darm beeinflusst über Nerven und Botenstoffe das Befinden; Entscheidungen werden jedoch im Gehirn getroffen."
+  },
+  {
+   "id": "M28",
+   "expected": "false",
+   "de": "Kälte allein verursacht eine Erkältung.",
+   "en": "Cold weather itself causes the common cold.",
+   "evidence": "Erkältungen werden durch Viren ausgelöst; Kälte allein verursacht keine Erkältung."
+  },
+  {
+   "id": "M29",
+   "expected": "false",
+   "de": "Lemminge begehen Massenselbstmord.",
+   "en": "Lemmings commit mass suicide.",
+   "evidence": "Die Vorstellung vom Massenselbstmord geht auf einen inszenierten Dokumentarfilm von 1958 zurück; Lemminge wandern bei hoher Dichte ab."
+  },
+  {
+   "id": "M30",
+   "expected": "false",
+   "de": "Die Sahara ist die größte Wüste der Welt.",
+   "en": "The Sahara is the largest desert in the world.",
+   "evidence": "Die Antarktis ist mit rund 14 Millionen Quadratkilometern die größte Wüste der Welt, vor der Sahara mit etwa 9 Millionen."
+  },
+  {
+   "id": "F01",
+   "expected": "true",
+   "de": "Wasser siedet auf Meereshöhe bei 100 Grad Celsius.",
+   "en": "At sea level, water boils at 100 degrees Celsius.",
+   "evidence": "Bei normalem Luftdruck auf Meereshöhe liegt der Siedepunkt von Wasser bei 100 Grad Celsius."
+  },
+  {
+   "id": "F02",
+   "expected": "true",
+   "de": "Die Erde umkreist die Sonne in etwa 365 Tagen.",
+   "en": "The Earth orbits the Sun in about 365 days.",
+   "evidence": "Ein Umlauf der Erde um die Sonne dauert etwa 365,25 Tage."
+  },
+  {
+   "id": "F03",
+   "expected": "true",
+   "de": "Licht braucht etwa acht Minuten von der Sonne zur Erde.",
+   "en": "Sunlight takes about eight minutes to reach the Earth.",
+   "evidence": "Das Licht der Sonne benötigt rund 8 Minuten und 20 Sekunden bis zur Erde."
+  },
+  {
+   "id": "F04",
+   "expected": "true",
+   "de": "Der Mensch hat 23 Chromosomenpaare.",
+   "en": "Humans have 23 pairs of chromosomes.",
+   "evidence": "Menschliche Körperzellen enthalten 46 Chromosomen, also 23 Chromosomenpaare."
+  },
+  {
+   "id": "F05",
+   "expected": "true",
+   "de": "Die Berliner Mauer fiel 1989.",
+   "en": "The Berlin Wall fell in 1989.",
+   "evidence": "Am 9. November 1989 wurde die Berliner Mauer geöffnet."
+  },
+  {
+   "id": "F06",
+   "expected": "true",
+   "de": "Die DNA hat die Form einer Doppelhelix.",
+   "en": "DNA has the shape of a double helix.",
+   "evidence": "Watson und Crick beschrieben 1953 die Struktur der DNA als Doppelhelix."
+  },
+  {
+   "id": "F07",
+   "expected": "true",
+   "de": "Der Mount Everest ist der höchste Berg über dem Meeresspiegel.",
+   "en": "Mount Everest is the highest mountain above sea level.",
+   "evidence": "Mit rund 8.849 Metern über dem Meeresspiegel ist der Mount Everest der höchste Berg der Erde."
+  },
+  {
+   "id": "F08",
+   "expected": "true",
+   "de": "Pflanzen erzeugen bei der Photosynthese Sauerstoff.",
+   "en": "Plants produce oxygen during photosynthesis.",
+   "evidence": "Bei der Photosynthese wandeln Pflanzen Kohlendioxid und Wasser mithilfe von Licht in Zucker um und geben Sauerstoff ab."
+  },
+  {
+   "id": "F09",
+   "expected": "true",
+   "de": "Der Mond ist im Mittel etwa 384.000 Kilometer von der Erde entfernt.",
+   "en": "The Moon is on average about 384,000 kilometres from Earth.",
+   "evidence": "Die mittlere Entfernung zwischen Erde und Mond beträgt etwa 384.400 Kilometer."
+  },
+  {
+   "id": "F10",
+   "expected": "true",
+   "de": "Das menschliche Herz hat vier Kammern.",
+   "en": "The human heart has four chambers.",
+   "evidence": "Das Herz des Menschen besteht aus zwei Vorhöfen und zwei Herzkammern, insgesamt vier Kammern."
+  },
+  {
+   "id": "F11",
+   "expected": "true",
+   "de": "Neil Armstrong betrat 1969 als erster Mensch den Mond.",
+   "en": "Neil Armstrong was the first person to walk on the Moon in 1969.",
+   "evidence": "Am 21. Juli 1969 betrat Neil Armstrong während der Mission Apollo 11 als erster Mensch den Mond."
+  },
+  {
+   "id": "F12",
+   "expected": "true",
+   "de": "Die Lichtgeschwindigkeit im Vakuum beträgt rund 300.000 Kilometer pro Sekunde.",
+   "en": "The speed of light in a vacuum is about 300,000 kilometres per second.",
+   "evidence": "Die Lichtgeschwindigkeit im Vakuum beträgt exakt 299.792.458 Meter pro Sekunde."
+  },
+  {
+   "id": "F13",
+   "expected": "true",
+   "de": "Wale sind Säugetiere.",
+   "en": "Whales are mammals.",
+   "evidence": "Wale atmen Luft, sind warmblütig und säugen ihre Jungen; sie gehören zu den Säugetieren."
+  },
+  {
+   "id": "F14",
+   "expected": "true",
+   "de": "Antibiotika wirken nicht gegen Viren.",
+   "en": "Antibiotics do not work against viruses.",
+   "evidence": "Antibiotika bekämpfen Bakterien; gegen Viren wie Grippe- oder Erkältungsviren sind sie wirkungslos."
+  },
+  {
+   "id": "F15",
+   "expected": "true",
+   "de": "Der Amazonas führt mehr Wasser als jeder andere Fluss.",
+   "en": "The Amazon carries more water than any other river.",
+   "evidence": "Der Amazonas hat mit durchschnittlich über 200.000 Kubikmetern pro Sekunde den größten Abfluss aller Flüsse."
+  },
+  {
+   "id": "F16",
+   "expected": "true",
+   "de": "Die Erstbesteigung des Mount Everest gelang 1953.",
+   "en": "Mount Everest was first climbed in 1953.",
+   "evidence": "Edmund Hillary und Tenzing Norgay erreichten am 29. Mai 1953 als Erste den Gipfel des Mount Everest."
+  },
+  {
+   "id": "F17",
+   "expected": "true",
+   "de": "Ein Oktopus hat drei Herzen.",
+   "en": "An octopus has three hearts.",
+   "evidence": "Kraken besitzen ein Körperherz und zwei Kiemenherzen, also drei Herzen."
+  },
+  {
+   "id": "F18",
+   "expected": "true",
+   "de": "Der Pazifik ist der größte Ozean.",
+   "en": "The Pacific is the largest ocean.",
+   "evidence": "Der Pazifische Ozean ist mit rund 165 Millionen Quadratkilometern der größte Ozean der Erde."
+  },
+  {
+   "id": "F19",
+   "expected": "true",
+   "de": "Penicillin wurde 1928 von Alexander Fleming entdeckt.",
+   "en": "Penicillin was discovered by Alexander Fleming in 1928.",
+   "evidence": "Alexander Fleming entdeckte 1928 die antibakterielle Wirkung des Schimmelpilzes Penicillium."
+  },
+  {
+   "id": "F20",
+   "expected": "true",
+   "de": "Die Venus ist der heißeste Planet des Sonnensystems.",
+   "en": "Venus is the hottest planet in the solar system.",
+   "evidence": "Wegen ihrer dichten Kohlendioxid-Atmosphäre ist die Venus mit rund 460 Grad Celsius an der Oberfläche der heißeste Planet."
+  },
+  {
+   "id": "F21",
+   "expected": "true",
+   "de": "Das Grundgesetz der Bundesrepublik Deutschland trat 1949 in Kraft.",
+   "en": "Germany's Basic Law came into force in 1949.",
+   "evidence": "Das Grundgesetz trat am 23. Mai 1949 in Kraft."
+  },
+  {
+   "id": "F22",
+   "expected": "true",
+   "de": "Rotes Blut erhält seine Farbe durch Hämoglobin.",
+   "en": "Blood gets its red colour from haemoglobin.",
+   "evidence": "Der eisenhaltige Blutfarbstoff Hämoglobin in den roten Blutkörperchen gibt dem Blut seine rote Farbe."
+  },
+  {
+   "id": "F23",
+   "expected": "true",
+   "de": "Bienen kommunizieren über einen Schwänzeltanz.",
+   "en": "Honeybees communicate through a waggle dance.",
+   "evidence": "Honigbienen teilen Richtung und Entfernung von Futterquellen über den Schwänzeltanz mit."
+  },
+  {
+   "id": "F24",
+   "expected": "true",
+   "de": "Schall breitet sich in Wasser schneller aus als in Luft.",
+   "en": "Sound travels faster in water than in air.",
+   "evidence": "In Luft breitet sich Schall mit etwa 343 Metern pro Sekunde aus, in Wasser mit etwa 1.480 Metern pro Sekunde."
+  },
+  {
+   "id": "F25",
+   "expected": "true",
+   "de": "Die Französische Revolution begann 1789.",
+   "en": "The French Revolution began in 1789.",
+   "evidence": "Mit dem Sturm auf die Bastille am 14. Juli 1789 begann die Französische Revolution."
+  },
+  {
+   "id": "F26",
+   "expected": "true",
+   "de": "Pinguine leben fast ausschließlich auf der Südhalbkugel.",
+   "en": "Penguins live almost exclusively in the Southern Hemisphere.",
+   "evidence": "Pinguine kommen nahezu nur auf der Südhalbkugel vor; einzig der Galápagos-Pinguin lebt teilweise nördlich des Äquators."
+  },
+  {
+   "id": "F27",
+   "expected": "true",
+   "de": "Ein Tag auf dem Mars dauert etwa 24,6 Stunden.",
+   "en": "A day on Mars lasts about 24.6 hours.",
+   "evidence": "Ein Sonnentag auf dem Mars, ein Sol, dauert etwa 24 Stunden und 39 Minuten."
+  },
+  {
+   "id": "F28",
+   "expected": "true",
+   "de": "Rauchen erhöht das Risiko für Lungenkrebs.",
+   "en": "Smoking increases the risk of lung cancer.",
+   "evidence": "Zahlreiche Studien zeigen, dass Rauchen die wichtigste vermeidbare Ursache für Lungenkrebs ist."
+  },
+  {
+   "id": "F29",
+   "expected": "true",
+   "de": "Gold ist ein chemisches Element mit dem Symbol Au.",
+   "en": "Gold is a chemical element with the symbol Au.",
+   "evidence": "Gold ist das chemische Element mit der Ordnungszahl 79 und dem Symbol Au."
+  },
+  {
+   "id": "F30",
+   "expected": "true",
+   "de": "Die Titanic sank 1912.",
+   "en": "The Titanic sank in 1912.",
+   "evidence": "Die Titanic sank in der Nacht vom 14. auf den 15. April 1912 nach der Kollision mit einem Eisberg."
+  }
+ ]
+}

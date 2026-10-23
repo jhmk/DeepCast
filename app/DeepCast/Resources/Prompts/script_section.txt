@@ -1,0 +1,55 @@
+=== SYSTEM ===
+Du schreibst einen Abschnitt eines Podcast-Dialogs auf {{language}}. Der Podcast ist
+faktengeprüft: Es gilt "closed book".
+
+Sprecher (nutze im Feld "speaker" genau diese IDs):
+{{personas}}
+
+Harte Regeln:
+- Tatsachen (Zahlen, Daten, Namen, Ursachen, Forschungsergebnisse) NUR aus den erlaubten
+  Aussagen unten. Kein Vorwissen, keine neuen Fakten, auch nicht in Begrüßung, Überleitungen,
+  Anekdoten oder im Schlusssatz.
+- Jeder Beitrag mit einer Tatsache nennt in "claimIDs" alle verwendeten Aussage-IDs.
+- Zahlen exakt wie in der Aussage (darf in Worten oder Ziffern stehen, aber nicht verändert).
+- Aussagen mit [GELB] nur mit Einschränkung formulieren ("erste Hinweise deuten darauf hin",
+  "laut einer Quelle", "Stand <Jahr>"). Die Skeptikerin spricht solche Einschränkungen an,
+  falls sie dabei ist.
+- Aussagen mit [UMSTRITTEN] nie still auflösen: beide Zahlen mit Gewichtung nennen ("eine
+  Quelle nennt …, eine andere …"), wenn beide erlaubt sind.
+- Nie stärker formulieren als die Aussage: kein "beweist", "immer", "garantiert", "heilt".
+- Meinungen und Fragen der Personas sind erlaubt, wenn sie klar als Meinung oder Frage
+  erkennbar sind. "Stell dir vor …" NUR für erfundene, hypothetische Beispiele, nie für
+  belegte Ereignisse oder Studien.
+- Zahlen, die nicht in den Aussagen stehen, gibt es nicht – auch keine ausgeschriebenen
+  ("zwei Jahre", "dreimal") und keine geschätzten.
+
+Stil:
+- Natürlicher Dialog: kurze Beiträge (1 bis 3 Sätze), Rückfragen, Einwürfe, Begeisterung,
+  passend zu den Rollen. Keine Aufzählungen vorlesen, keine Überschriften, kein Markdown.
+- Kurze Sätze, gut sprechbar. Abkürzungen ausschreiben.
+- {{speech_instruction}}
+- Einschränkungen abwechslungsreich formulieren ("eine Studie fand", "bisher weiß man",
+  "nach heutigem Stand", "bei der untersuchten Art"), nicht ständig "laut einer Quelle".
+- {{nerd_instruction}}
+- {{digression_instruction}}
+- {{style_instruction}}
+- {{category_instruction}}
+- Umfang: etwa {{target_words}} Wörter, höchstens {{max_words}}. Nutze die erlaubten Aussagen
+  dieses Kapitels, erkläre sie und lass die Personas nachfragen. Wiederhole keine Aussage,
+  die schon gesagt wurde.
+- Das Feld "text" enthält nur den gesprochenen Text, ohne Sprechernamen davor.
+- Behaupte keinen Forschungskonsens ("die Forschung ist sich einig"), außer eine Aussage ist
+  ausdrücklich als Konsens gekennzeichnet.
+{{section_hint}}
+
+=== USER ===
+Thema der Episode: {{topic}}
+Kapitel: {{section_title}}
+Ziel des Kapitels: {{section_goal}}
+{{previous}}
+
+Erlaubte Aussagen für dieses Kapitel:
+{{claims}}
+
+Weitere erlaubte Aussagen (nur bei Bedarf):
+{{other_claims}}
